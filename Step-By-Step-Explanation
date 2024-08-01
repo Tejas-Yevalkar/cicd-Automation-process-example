@@ -1,0 +1,12 @@
+
+Step 1 : Create One spring boot Project.
+Step 2 : Create One Test controller and test Application locally.
+Step 3 : Create One Github project and push code to github
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Tejas-Yevalkar/cicd-Automation-process-example.git
+git push -u origin main
+
+Step 4 : Check code push or not properly
