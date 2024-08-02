@@ -1,12 +1,35 @@
 
+Step 1: Download Jenkins : https://www.jenkins.io/download/#downloading-jenkins
+
+
+Step : Download Docker Hub : https://www.jenkins.io/download/#downloading-jenkins
+Step : Download Kubernetes :
 Step 1 : Create One spring boot Project.
 Step 2 : Create One Test controller and test Application locally.
 Step 3 : Create One Github project and push code to github
 git init
-git add README.md
+git add .
 git commit -m "first commit"
-git branch -M main
+git status
+git branch -M master
 git remote add origin git@github.com:Tejas-Yevalkar/cicd-Automation-process-example.git
-git push -u origin main
+git push -u origin master
 
 Step 4 : Check code push or not properly
+
+Step 5 : Start Jenkins in browser (http://localhost:8080/)
+*****Jenkins Credential*****
+User Name : TejasYevalkar
+Password : Sparken@123456
+Full Name : Tejas Yevalkar
+Email ID : tejasyevalker@gmail.com
+
+Step 6 : Select "New Item" Button and provide your Item Name(Ex: cicd_automation) and select "Pipeline" Option and click "OK" Button
+
+Step 7 : Write Description and Check "GitHub project" and Provide your git Project url.
+         In "Build Triggers" part, Select box "GitHub hook trigger for GITScm polling".
+         In "Pipeline" Select Definition : "Pipeline Script from SCM"
+         SCM : Select GIT and provide your Git URL
+         Script Path : Provide Your jenkins file Name and select "Save" Button
+
+Step 8 : In Dashboard select your Pipeline Select build Now.
