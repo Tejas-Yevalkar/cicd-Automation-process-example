@@ -17,7 +17,7 @@ pipeline {
         stage('Build Docker Iamge'){
             steps{
                 script{
-                    bat 'docker build -t tejasyevalkar/cicd-automation .'
+                    bat 'docker build -t tejasyevalkar/cicd-automation-new .'
                 }
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps{
                 script{
                     docker.withRegistry('https://index.docker.io/v1/', DOCKER_CREDENTIALS_ID) {
-                        bat 'docker push tejasyevalkar/cicd-automation'
+                        bat 'docker push tejasyevalkar/cicd-automation-new'
                     }
                 }
             }
